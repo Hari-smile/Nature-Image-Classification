@@ -153,7 +153,8 @@ class_names = [
 @st.cache_resource
 def load_model():
     model = tf.keras.models.load_model(
-        "best_efficientnetb0.keras"
+        "best_efficientnetb0.keras",
+        compile=False
     )
     return model
 
