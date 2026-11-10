@@ -1,3 +1,4 @@
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
@@ -217,4 +218,11 @@ marimo/_lsp/
 __marimo__/
 
 # Streamlit
+.streamlit/secrets.toml
+
+# Nature Image Classification project
+.DS_Store
+Thumbs.db
+
+# Streamlit secrets
 .streamlit/secrets.toml
