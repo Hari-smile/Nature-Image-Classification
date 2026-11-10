@@ -150,15 +150,26 @@ class_names = [
 ]    
 
 #Load the trained model
+st.info("Starting application...")
+
 @st.cache_resource
 def load_model():
+    print("Loading EfficientNetB0 model...", flush=True)
+
     model = tf.keras.models.load_model(
         "best_efficientnetb0.keras",
         compile=False
     )
+
+    print("EfficientNetB0 model loaded successfully!", flush=True)
+
     return model
 
-model  = load_model()
+st.info("Loading EfficientNetB0 model...")
+
+model = load_model()
+
+st.success("Model loaded successfully!")
 
 #Application title
 st.title("🌍 Nature Image Classification")
