@@ -204,7 +204,11 @@ if uploaded_file is not None:
         predicted_class = class_names[predicted_index]
         confidence =  predictions[0][predicted_index] *100
 
-        st.success(f"Predicted class : {predicted_class.title()}")
+        st.markdown(
+            f"<p style='color: black; font-size: 20px; font-weight: bold;'>"
+            f"Predicted class: {predicted_class.title()}</p>",
+            unsafe_allow_html=True
+        )
         st.write(f"Confidence : {confidence:.2f}%")
 
         #Display probabilities
