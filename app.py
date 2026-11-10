@@ -143,7 +143,7 @@ h2, h3 {
 class_names = [
     "buildings",
     "forest",
-    "galcier",
+    "glacier",
     "mountain",
     "sea",
     "street"
